@@ -1,18 +1,30 @@
 {
   "name": "node-server-key-generator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Node.js utility to generate mutual TLS certificates and elliptic curve (EC) JWK key sets (JWKS) for secure server-to-server communication and JWT-based authentication.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node generate-tls-certs.js && node generate-jwk.js",
-    "start:tls": "node generate-tls-certs.js",
-    "start:jwk": "node generate-jwk.js"
+    "generate": "node generate-tls-certs.js && node generate-jwk.js",
+    "generate:tls": "node generate-tls-certs.js",
+    "generate:jwk": "node generate-jwk.js"
   },
+  "keywords": [
+    "jwk",
+    "jwks",
+    "tls",
+    "mtls",
+    "certificates",
+    "jwt",
+    "security",
+    "cryptography"
+  ],
   "author": "Ram",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^17.2.1",
-    "jose": "^6.0.12"
+    "dotenv": "^16.4.7",
+    "jose": "^5.9.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "type": "module"
 }

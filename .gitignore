@@ -1,3 +1,10 @@
+# Generated keys - NEVER commit these
+keys/
+*.pem
+*.csr
+*.srl
+*-passphrase.txt
+
 # Logs
 logs
 *.log
